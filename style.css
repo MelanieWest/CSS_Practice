@@ -1,0 +1,86 @@
+.goLeft{
+    float:left;
+    height: 100px;
+    width: 100px;
+}
+.absolute1{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    height: 50px;
+    width: 200px;
+    border: solid yellow 1px;
+}
+#main1 {
+    clear: left;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid red;
+}
+
+#main2{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.simple {
+    width: 500px;
+    margin: 20px auto;
+    border: solid blue 1px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .fancy {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border: solid blue 10px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .static{
+    position:static;
+    height: 60px;
+    width: 800px;
+    border: solid green 2px;
+    text-align: center;
+  }
+  .relative1{
+    position:relative;
+    height: 60px;
+    width: 800px;
+    border: solid green 2px;
+    text-align: center;
+  }
+  .absolute2{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 50px;
+      width: 150px;
+      border: solid yellow 1px;
+  }
+  .relative2{
+    position:relative;
+    top:-30px;
+    left:+40px;
+    height: 60px;
+    width: 800px;
+    border: solid green 2px;
+    text-align: center;
+  }
+  .fixed{
+      position:fixed;
+      bottom: 0px;
+      right: 0px;
+      height: 100px;
+      width: 100px;
+      border: solid yellow 2px;
+  }

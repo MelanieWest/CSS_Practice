@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">.
+</head>
+<body>
+    <header style = "height:100px;background-color:bisque">This is a practice exercise for http://learnlayout.com/</header>
+    <p style = "border: solid 3px blue; height:20px">this is a p element with a <span style="color:lightblue">span element </span>inserted, plus a color toggle button:  <button style="height:20px;width:100px" onclick="toggleSecondaries()">Show / Hide </button></p>
+    <div class="absolute1">this div is absolute - the document is the parent</div>
+    <div class="goLeft" style = "background-color:red">Div1</div>
+    <div class="goLeft" id = "Orange" style = "background-color:orange;display:none">Div2</div>
+    <div class="goLeft" style = "background-color:yellow">Div3</div>
+    <div class="goLeft" id = "Green" style = "background-color:green;visibility:hidden">Div4</div>
+    <div class="goLeft" style = "background-color:blue">Div5</div>
+
+    <div id="main1">this is a div with fixed width setting.  It will neither become greater or less than 600 pixels</div>
+    <div id="main2">this is a div with max width setting.  It will never become greater than 600 pixels, but it can be less (in size, or fewer,in pixels)</div>
+    <div class="simple">this is a simple div to show box-sizing</div>
+    <div class="fancy">this is a fancy div to show box-sizing.  Notice we are the same size</div>
+    <div class="static">this div is static - meaning no special positioning occurs</div>
+    <div class="relative1">this div is relative, but it may as well be static.  Nothing extra is done.
+        <div class="absolute2">absolute must be in a relative parent div</div>
+    </div>
+    <div class="relative2">this div is relative, and extra stuff is done to move it relative to its normal place</div>
+    <div class="fixed">fixed position relative to parent</div>
+    
+
+    <script type="text/javascript">
+    function toggleSecondaries(){
+        var x = document.getElementById("Orange");
+        var y = document.getElementById("Green");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.visibility = "visible";
+        } else {
+                x.style.display = "none";
+                y.style.visibility = "hidden";
+          }
+    }
+    </script>
+
+</body>
+</html>
