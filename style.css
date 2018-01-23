@@ -1,7 +1,8 @@
 .goLeft{
     float:left;
     height: 100px;
-    width: 100px;
+    width: 200px;
+    text-align: center;
 }
 .absolute1{
     position: absolute;
