@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">.
 </head>
 <body>
-    <header style = "height:100px;background-color:bisque"><h3>This is a practice exercise for http://learnlayout.com/.  The class names and id's used in this exercise are optional, but help reinforce which CSS features are being used. Notice that headers, p elements and divs will normally fill the width of the screen unless the CSS specifically restricts them.</h3></header>
+    <header style = "height:100px;background-color:bisque"><h3>This is a practice exercise for <a href="http://learnlayout.com/" target="blank">learnlayout.com</a>.  The class names and id's used in this exercise are optional, but help reinforce which CSS features are being used. Notice that headers, p elements and divs will normally fill the width of the screen unless the CSS specifically restricts them.</h3></header>
     <p style = "border: solid 3px blue; height:20px">this is a p element with a <span style="color:lightblue">span element </span>inserted, plus a color toggle button:  <button style="height:20px;width:100px" onclick="toggleSecondaries()">Show / Hide </button></p>
     <div class="absolute1">this div is absolute - the document is the parent</div>
     <div class="goLeft" style = "margin:5px;background-color:red">floated left</div>
@@ -28,6 +28,24 @@
     <div class="relative2">this div is relative, and extra stuff is done to move it relative to its normal place</div>
     <div class="fixed">fixed position relative to parent</div>
     
+
+    <div class="container">
+        container is position 'relative'
+        <nav>
+            side nav bar (this div is positioned 'absolute')
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>absolute</li>
+                <li>fixed</li>
+                <li>float</li>
+            </ul>
+        </nav>
+        <section>Section 1 (positioned 'static' by default)  - all these divs are nested within the (orange) container div in the html.  It was given a large left margin to appear to be moved over. (see box model)</section>
+        <section>Section 2 (positioned 'static' by default)  - this setup works because the navbar is shorter than the height of the two sections.  Otherwise it would overflow the container (it is the nature of 'absolute' divs to do so)</section>
+    </div>
+
+    <footer>Footer (position 'fixed')</footer>
 
     <script type="text/javascript">
     function toggleSecondaries(){
